@@ -5,19 +5,13 @@ module.exports = {
   apps: [{
     name: 'suetolog-backtester',
     script: './server/index.js',
-    cwd: '/var/www/suetolog',
+    cwd: '/srv/suetolog',
     instances: 1, // Можно увеличить для масштабирования
     exec_mode: 'fork', // или 'cluster' для нескольких инстансов
     
     // Переменные окружения
     env: {
       NODE_ENV: 'production',
-      PORT: 3000,
-    },
-    
-    // Переменные для development (если нужно)
-    env_development: {
-      NODE_ENV: 'development',
       PORT: 3000,
     },
 
