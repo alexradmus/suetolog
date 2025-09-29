@@ -211,13 +211,13 @@ function updateChart(candles, result) {
     const candle = candles[idx];
     const signal = signalMap.get(candle.ts);
     if (signal === 'long') {
-      bar.color = '#63e6be';
-      bar.borderColor = '#63e6be';
-      bar.wickColor = '#63e6be';
+      bar.color = '#4cffb3';
+      bar.borderColor = '#1de9b6';
+      bar.wickColor = '#1de9b6';
     } else if (signal === 'short') {
-      bar.color = '#ff8787';
-      bar.borderColor = '#ff8787';
-      bar.wickColor = '#ff8787';
+      bar.color = '#ff6b6b';
+      bar.borderColor = '#ff1744';
+      bar.wickColor = '#ff1744';
     }
   });
   candleSeries.setData(data);
